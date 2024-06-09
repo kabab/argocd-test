@@ -14,6 +14,18 @@ spec:
       containers:
       - image: wordpress:6.5.4
         name: wordpress
+        env:
+        - valueFrom:
+            secretKeyRef:
+              name: mariadb-secret
+              key: MARIADB_ROOT_PASSWORD
+          name: WORDPRESS_DB_PASSWORD
+        - value: wordpress
+          name: WORDPRESS_DB_NAME
+        - value: root
+          name: WORDPRESS_DB_USER
+        - value: mariadb
+          name: WORDPRESS_DB_HOST
         resources:
           limits:
             memory: "128Mi"
