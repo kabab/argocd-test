@@ -9,3 +9,4 @@ resources:
 - statefulset.yaml
 - rollout.yaml
 - rollout-service.yaml
+- ingress.yaml
