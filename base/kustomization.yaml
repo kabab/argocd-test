@@ -7,3 +7,5 @@ resources:
 - service.yaml
 - secret.yaml
 - statefulset.yaml
+- rollout.yaml
+- rollout-service.yaml
