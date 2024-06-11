@@ -11,3 +11,4 @@ resources:
 - rollout-service.yaml
 - ingress.yaml
 - hpa.yaml
+- ingress-wp.yaml
