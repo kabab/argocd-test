@@ -10,3 +10,4 @@ resources:
 - rollout.yaml
 - rollout-service.yaml
 - ingress.yaml
+- hpa.yaml
