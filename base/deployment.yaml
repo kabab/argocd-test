@@ -28,10 +28,10 @@ spec:
           name: WORDPRESS_DB_HOST
         resources:
           limits:
-            memory: "128Mi"
+            memory: "256Mi"
             cpu: "500m"
           requests:
-            memory: "64Mi"
+            memory: "256Mi"
             cpu: "250m"
         ports:
         - containerPort: 80
